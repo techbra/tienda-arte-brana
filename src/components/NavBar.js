@@ -1,5 +1,6 @@
 import "./NavBar.css";
 import Button from "react-bootstrap/Button"
+import CartWidget from "./CartWidget";
 
 function NavBar(){
     return(
@@ -10,6 +11,7 @@ function NavBar(){
         <a href="/create">Tienda</a>
         <a href="/create">Obras</a>
         <Button variant="primary">Primary</Button>
+        <CartWidget></CartWidget>
        </div>
       
         
