@@ -3,9 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
 function CartWidget (){
     return(
-    <div className="CartWidget">
+    <div className="cartwidget">
     <FontAwesomeIcon icon={faCartShopping}/>
-       <h2>7</h2>
     </div>
    
     );

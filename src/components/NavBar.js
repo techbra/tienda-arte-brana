@@ -1,20 +1,23 @@
 import "./NavBar.css";
 import Button from "react-bootstrap/Button"
 import CartWidget from "./CartWidget";
+import { fontSize } from "@mui/system";
 
-function NavBar(){
-    return(
-        <div clasName="navbar">
-         <p style={{color:"purple"}}>Tienda de Arte♥</p>
-        <h1 style={{color:"pink"}}>ARTEOLOGIA</h1>
-        <a href="/">Menu</a>
-        <a href="/create">Tienda</a>
-        <a href="/create">Obras</a>
-        <Button variant="primary">Primary</Button>
+const Navbar = () => {
+    return (
+      <nav className="navbar">
+        <div>
+        <a href="/create" claName="nav enlace">Inicio</a>
+        <a href="/create" claName="nav enlace">Tienda</a>
+        <a href="/create" claName="nav enlace">Obras</a>
         <CartWidget></CartWidget>
+        <p style={{color:"purple", 
+        background: "light blue",
+        borderRdius: "8px", fontSize:"large"}}>Tienda de Arte♥</p>
+        <h1 style={{color:"fuchsia", fontSize:"x-large"}}>ARTEOLOGIA</h1>
        </div>
-      
-        
-    );
+    </nav>
+  );
 }
-export default NavBar;
+ 
+export default Navbar;
