@@ -5,7 +5,7 @@ import Count from './components/Count';
 
 
 function App() {
-  const [estadoCarrito, setEstadoCarrito] = useState("Carrito vacio")
+  const [estadoCarrito, setEstadoCarrito] = useState("carrito vacio")
   const [numeroProductos, setNumeroProductos] = useState(0);
 
   useEffect(()=>{
@@ -27,6 +27,7 @@ function App() {
       <header className="App-header">
      <NavBar />
       <Count stock={10} initial={0} sumar a mi pedido={agregar}/>
+      <ItemListContainer />
       </header>
     </div>
   );
